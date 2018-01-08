@@ -4,7 +4,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { SelectItem } from './select-item';
 import { stripTags } from './select-pipes';
 import { OptionsBehavior } from './select-interfaces';
-import { escapeRegexp } from './common';
+import { escapeRegexp, stripAccents } from './common';
 
 let styles = `
   .ui-select-toggle {
@@ -423,7 +423,7 @@ export class SelectComponent implements OnInit, ControlValueAccessor {
     let target = e.target || e.srcElement;
     if (target && target.value) {
       this.inputValue = target.value;
-      this.behavior.filter(new RegExp(escapeRegexp(this.inputValue), 'ig'));
+      this.behavior.filter(new RegExp(escapeRegexp(stripAccents(this.inputValue)), 'ig'));
       this.doEvent('typed', this.inputValue);
     } else {
       this.open();
@@ -689,7 +689,7 @@ export class GenericBehavior extends Behavior implements OptionsBehavior {
   public filter(query: RegExp): void {
     let options = this.actor.itemObjects
       .filter((option: SelectItem) => {
-        return stripTags(option.text).match(query) &&
+        return stripTags(stripAccents(option.text)).match(query) &&
           (this.actor.multiple === false ||
             (this.actor.multiple === true && this.actor.active.map((item: SelectItem) => item.id).indexOf(option.id) < 0));
       });
@@ -764,7 +764,7 @@ export class ChildrenBehavior extends Behavior implements OptionsBehavior {
     let optionsMap: Map<string, number> = new Map<string, number>();
     let startPos = 0;
     for (let si of this.actor.itemObjects) {
-      let children: Array<SelectItem> = si.children.filter((option: SelectItem) => query.test(option.text));
+      let children: Array<SelectItem> = si.children.filter((option: SelectItem) => query.test(stripAccents(option.text)));
       startPos = si.fillChildrenHash(optionsMap, startPos);
       if (children.length > 0) {
         let newSi = si.getSimilar();
