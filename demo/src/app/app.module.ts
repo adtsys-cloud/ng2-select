@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { TabsModule, ButtonsModule } from 'ngx-bootstrap';
 
-import { SelectModule } from 'ng2-select';
+import { AdtSelectModule } from 'adt-ng2-select';
 import { AppComponent } from './app.component';
 import { SelectSectionComponent } from './components/select-section';
 import { ChildrenDemoComponent } from './components/select/children-demo';
@@ -26,7 +26,7 @@ import { SampleSectionComponent } from './components/sample-section.component';
   imports: [
     BrowserModule,
     FormsModule,
-    SelectModule,
+    AdtSelectModule,
     TabsModule.forRoot(),
     ButtonsModule.forRoot(),
     CommonModule

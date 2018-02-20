@@ -1,5 +1,5 @@
 {
-  "name": "ng2-select",
+  "name": "adt-ng2-select",
   "peerDependencies": {
     "@angular/common": "*",
     "@angular/core": "*"

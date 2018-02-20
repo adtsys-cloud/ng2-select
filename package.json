@@ -1,8 +1,8 @@
 {
-  "name": "ng2-select-base",
+  "name": "adt-ng2-select-base",
   "version": "2.0.0",
   "private": true,
-  "description": "Angular2 based replacement for select boxes",
+  "description": "Accent insensitive fork of valor-software/ng2-select",
   "scripts": {
     "lite-server": "lite-server -c demo/bs-config.json",
     "demo.serve": "run-s build link demo.build lite-server",
@@ -31,22 +31,22 @@
     "selectify",
     "angularjs"
   ],
-  "author": "Vyacheslav Chub <vyacheslav.chub@valor-software.com>",
+  "author": "ADTsys | Especialistas em cloud computing <atendimento@adtsys.com.br>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/valor-software/ng2-select.git"
+    "url": "git+ssh://git@github.com/adtsys-cloud/ng2-select.git"
   },
   "bugs": {
-    "url": "https://github.com/valor-software/ng2-select/issues"
+    "url": "https://github.com/adtsys-cloud/ng2-select/issues"
   },
-  "homepage": "https://github.com/valor-software/ng2-select#readme",
+  "homepage": "https://github.com/adtsys-cloud/ng2-select#readme",
   "peerDependencies": {
     "@angular/common": ">=4.3.0 || >5.0.0",
     "@angular/core": ">=4.3.0 || >5.0.0"
   },
   "devDependencies": {
-    "@angular/cli": "1.5.0",
+    "@angular/cli": "^1.7.0",
     "@angular/common": "4.3.6",
     "@angular/compiler": "4.3.6",
     "@angular/compiler-cli": "4.3.6",
@@ -111,23 +111,14 @@
     "typescript": "2.4.2",
     "wallaby-webpack": "0.0.30",
     "webdriver-manager": "11.1.1",
+    "webpack": "^3.11.0",
     "zone.js": "0.7.5"
   },
   "contributors": [
     {
-      "name": "Vyacheslav Chub",
-      "email": "vyacheslav.chub@valor-software.com",
-      "url": "https://github.com/buchslava"
-    },
-    {
-      "name": "Dmitriy Shekhovtsov",
-      "email": "valorkin@gmail.com",
-      "url": "https://github.com/valorkin"
-    },
-    {
-      "name": "Oleksandr Telnov",
-      "email": "otelnov@gmail.com",
-      "url": "https://github.com/otelnov"
+      "name": "Lucas Pélos",
+      "email": "lucas.pelos@gmail.com",
+      "url": "https://github.com/lpelos"
     }
   ]
 }

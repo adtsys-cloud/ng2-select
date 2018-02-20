@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SelectModule } from '../ng2-select';
+import { AdtSelectModule } from '../ng2-select';
 
 const html = ``;
 
@@ -12,7 +12,7 @@ describe('Component: ng2-select', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [TestSelectComponent],
-      imports: [SelectModule]
+      imports: [AdtSelectModule]
     });
     TestBed.overrideComponent(TestSelectComponent, {set: {template: html}});
     fixture = TestBed.createComponent(TestSelectComponent);
