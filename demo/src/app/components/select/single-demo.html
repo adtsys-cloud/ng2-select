@@ -1,6 +1,6 @@
 <div style="width: 300px; margin-bottom: 20px;">
   <h3>Select a single city</h3>
-  <ng-select [allowClear]="true"
+  <adt-select [allowClear]="true"
               [items]="items"
               [disabled]="disabled"
               (data)="refreshValue($event)"
@@ -8,7 +8,7 @@
               (removed)="removed($event)"
               (typed)="typed($event)"
               placeholder="No city selected">
-  </ng-select>
+  </adt-select>
   <p></p>
   <pre>{{value.text}}</pre>
   <div>

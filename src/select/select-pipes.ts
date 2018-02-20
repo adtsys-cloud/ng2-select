@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { escapeRegexp } from './common';
 
-@Pipe({name: 'highlight'})
+@Pipe({name: 'adtHighlight'})
 export class HighlightPipe implements PipeTransform {
   public transform(value:string, query:string):any {
     if (query.length < 1) {

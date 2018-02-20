@@ -1,13 +1,13 @@
 ### Usage
 ```typescript
-import {SelectModule} from 'ng2-select';
+import {AdtSelectModule} from 'adt-ng2-select';
 ```
 
 ### Annotations
 ```typescript
 // class Select
 @Component({
-  selector: 'ng-select',
+  selector: 'adt-select',
   properties: [
     'allowClear',
     'placeholder',

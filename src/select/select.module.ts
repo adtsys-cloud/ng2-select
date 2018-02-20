@@ -10,5 +10,5 @@ import { OffClickDirective } from './off-click';
   declarations: [SelectComponent, HighlightPipe, OffClickDirective],
   exports: [SelectComponent, HighlightPipe, OffClickDirective]
 })
-export class SelectModule {
+export class AdtSelectModule {
 }

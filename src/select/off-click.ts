@@ -1,12 +1,12 @@
 import { Directive, HostListener, Input, OnInit, OnDestroy } from '@angular/core';
 
 @Directive({
-  selector: '[offClick]'
+  selector: '[adtOffClick]'
 })
 
 export class OffClickDirective implements OnInit, OnDestroy {
   /* tslint:disable */
-  @Input('offClick') public offClickHandler: any;
+  @Input('adtOffClick') public offClickHandler: any;
   /* tslint:enable */
   @HostListener('click', ['$event']) public onClick($event: MouseEvent): void {
     $event.stopPropagation();

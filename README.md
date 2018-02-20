@@ -1,19 +1,16 @@
-# Native UI Select Angular component ([demo](http://valor-software.com/ng2-select/))
-## ng2-select [![npm version](https://badge.fury.io/js/ng2-select.svg)](http://badge.fury.io/js/ng2-select) [![npm downloads](https://img.shields.io/npm/dm/ng2-select.svg)](https://npmjs.org/ng2-select)[![slack](https://ngx-slack.herokuapp.com/badge.svg)](https://ngx-slack.herokuapp.com)
-
-[![Angular 2 Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://github.com/mgechev/angular2-style-guide)
-[![Build Status](https://travis-ci.org/valor-software/ng2-select.svg?branch=development)](https://travis-ci.org/valor-software/ng2-select)
+# Accent insensitive Native UI Select Angular component ([demo](http://adtsys-cloud.github.io/ng2-select/))
+## adt-ng2-select
 
 ## Quick start
 
-1. A recommended way to install ***ng2-select*** is through [npm](https://www.npmjs.com/search?q=ng2-select) package manager using the following command:
+1. A recommended way to install ***adt-ng2-select*** is through [npm](https://www.npmjs.com/search?q=ng2-select) package manager using the following command:
 
-  `npm i ng2-select --save`
+  `npm i adt-ng2-select --save`
 
-2. Include `ng2-select.css` in your project
+2. Include `adt-ng2-select.css` in your project
 
 3. More information regarding of using ***ng2-select*** is located in
-  [demo](http://valor-software.github.io/ng2-select/) and [demo sources](https://github.com/valor-software/ng2-select/tree/master/demo).
+  [demo](http://adtsys-cloud.github.io/ng2-select/) and [demo sources](https://github.com/adtsys-cloud/ng2-select/tree/master/demo).
 
 ## API
 
@@ -43,11 +40,11 @@
 
 Please follow this guidelines when reporting bugs and feature requests:
 
-1. Use [GitHub Issues](https://github.com/valor-software/ng2-select/issues) board to report bugs and feature requests (not our email address)
+1. Use [GitHub Issues](https://github.com/adtsys-cloud/ng2-select/issues) board to report bugs and feature requests (not our email address)
 2. Please **always** write steps to reproduce the error. That way we can focus on fixing the bug, not scratching our heads trying to reproduce it.
 
 Thanks for understanding!
 
 ### License
 
-The MIT License (see the [LICENSE](https://github.com/valor-software/ng2-select/blob/master/LICENSE) file for the full text)
+The MIT License (see the [LICENSE](https://github.com/adtsys-cloud/ng2-select/blob/master/LICENSE) file for the full text)
